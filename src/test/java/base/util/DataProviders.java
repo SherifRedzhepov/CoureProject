@@ -15,7 +15,7 @@ public class DataProviders {
                     {"bike-light"},
                     {"onesie"}
             };
-    }
+        }
 
     @DataProvider(name = "invalidLoginParameters")
     public Object[][] readInvalidLoginParameters(){

@@ -11,7 +11,7 @@ public class ProductPage extends Base{
     private final static String BASE_PRODUCT_ID = "add-to-cart-sauce-labs-";
 
     @FindBy(className = "title")
-    private WebElement productTitle;
+   public WebElement productTitle;
 
     @FindBy(className = "shopping_cart_badge")
     private WebElement shoppingCartBadge;
@@ -23,7 +23,6 @@ public class ProductPage extends Base{
         super(driver);
         PageFactory.initElements(driver,this);
     }
-
     public boolean isAt(){
         if (productTitle.getText().equals("Products")){
             return true;

@@ -9,6 +9,7 @@ public class CheckoutCompletePage extends Base{
 
     @FindBy(className = "title")
     private WebElement checkoutCompleteTitle;
+
     public CheckoutCompletePage(WebDriver driver) {
         super(driver);
         PageFactory.initElements(driver,this);

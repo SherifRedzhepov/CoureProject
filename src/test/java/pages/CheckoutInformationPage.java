@@ -27,6 +27,7 @@ public class CheckoutInformationPage extends Base{
     }
 
     public CheckoutOverviewPage inputCheckoutInfo(String firstName , String lastName , String postalCode){
+
         firstNameInput.click();
         firstNameInput.clear();
         firstNameInput.sendKeys(firstName);

@@ -7,7 +7,6 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
-
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
@@ -21,7 +20,7 @@ public class TestUtil extends DataProviders {
     public void setupDriverAndOpenUrl(){
         readConfigFile("src/test/resources/config.properties");
         setupDriver();
-//       driver.manage().timeouts().implicitlyWait(Duration.from(Duration.ofSeconds(implicitWait)));
+//       driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(implicitWait));
         driver.get(testURL);
     }
 

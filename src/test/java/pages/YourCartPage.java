@@ -16,7 +16,6 @@ public class YourCartPage extends Base{
         super(driver);
         PageFactory.initElements(driver,this);
     }
-
     public CheckoutInformationPage buyProductByCart(){
         checkoutBtn.click();
         return new CheckoutInformationPage(driver);

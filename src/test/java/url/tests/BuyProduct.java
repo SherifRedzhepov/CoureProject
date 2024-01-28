@@ -9,6 +9,7 @@ public class BuyProduct extends TestUtil {
 
     @Test
     public void buyProduct(){
+
         LoginPage loginPage = new LoginPage(driver);
         ProductPage productPage = loginPage.login("standard_user","secret_sauce");
 
@@ -27,7 +28,7 @@ public class BuyProduct extends TestUtil {
         softAssert.assertTrue(checkoutOverviewPage.isCheckoutOverviewPage());
 
         CheckoutCompletePage checkoutCompletePage = checkoutOverviewPage.checkOutFinish();
-        softAssert.assertTrue(checkoutCompletePage.isCheckoutCompletePage(),"with this page we finish to buy product ");
+        softAssert.assertTrue(checkoutCompletePage.isCheckoutCompletePage());
 
         softAssert.assertAll();
     }

@@ -1,8 +1,5 @@
 package url.tests;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
-import org.testng.Assert;
 import org.testng.annotations.Test;
 import base.util.TestUtil;
 import org.testng.asserts.SoftAssert;
@@ -10,8 +7,6 @@ import pages.LoginPage;
 import pages.ProductPage;
 
 public class AddProductsToCart extends TestUtil {
-
-
 
     @Test(dataProvider = "products list")
     public void addToCart(String productName){
