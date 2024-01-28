@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<suite name="Login Tests" thread-count="2" parallel="tests" annotations="JDK" verboose="1">
+        <test name="successfulLogin" >
+            <classes>
+                <class name="url.tests.SuccessfulLogin"/>
+            </classes>
+        </test>
+    <test name="unsuccessfulLogin" >
+        <classes>
+            <class name="url.tests.UnSuccessfulLogin"/>
+        </classes>
+    </test>
+</suite>
